@@ -1,0 +1,285 @@
+html {
+    scroll-padding-top: 112px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html.dark,
+html.dark body {
+    background: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+html.dark main,
+html.dark section,
+html.dark .portfolio-grid {
+    background: rgb(0, 0, 0) !important;
+}
+
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, box-shadow, transform;
+    transition-duration: 220ms;
+    transition-timing-function: ease;
+}
+
+.section-shell {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: 2.75rem 1rem;
+}
+
+.portfolio-grid .section-shell {
+    max-width: none;
+    padding: 0;
+}
+
+.section-heading {
+    margin-bottom: 1.25rem;
+    max-width: 42rem;
+}
+
+.section-heading span,
+.label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: rgb(37 99 235);
+}
+
+.section-heading h2 {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: 0;
+    color: rgb(2 6 23);
+}
+
+.dark .section-heading h2 {
+    color: rgb(255 255 255);
+}
+
+.dashboard-card,
+.glass-panel {
+    border: 1px solid rgb(226, 232, 240);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
+    border-radius: 0.5rem;
+}
+
+.inner-panel {
+    border: 1px solid rgb(226, 232, 240);
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+.dark .inner-panel {
+    border-color: rgb(39, 39, 42);
+    background: rgb(0, 0, 0);
+}
+
+.dark .dashboard-card,
+.dark .glass-panel {
+    border-color: rgb(39, 39, 42);
+    background: rgb(0, 0, 0);
+    box-shadow: none;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: rgb(2 6 23);
+}
+
+.dark .card-title {
+    color: rgb(255 255 255);
+}
+
+.skill-badge,
+.mini-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid rgb(226 232 240);
+    background: rgb(255 255 255);
+    color: rgb(51 65 85);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.skill-badge {
+    padding: 0.7rem 0.95rem;
+}
+
+.mini-badge {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.72rem;
+}
+
+.dark .skill-badge,
+.dark .mini-badge {
+    border-color: rgb(39, 39, 42);
+    background: rgb(9, 9, 11);
+    color: rgb(212 212 216);
+}
+
+.stat-card {
+    border-radius: 0.5rem;
+    border: 1px solid rgb(226 232 240);
+    background: rgba(248, 250, 252, 0.8);
+    padding: 0.85rem;
+}
+
+.stat-card span {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: rgb(100 116 139);
+}
+
+.stat-card strong {
+    margin-top: 0.2rem;
+    display: block;
+    font-size: 0.9rem;
+    color: rgb(15 23 42);
+}
+
+.dark .stat-card {
+    border-color: rgb(39, 39, 42);
+    background: rgb(0, 0, 0);
+}
+
+.dark .stat-card span {
+    color: rgb(161 161 170);
+}
+
+.dark .stat-card strong {
+    color: rgb(244 244 245);
+}
+
+.project-button {
+    display: inline-flex;
+    min-height: 2.75rem;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.85rem;
+    border-width: 1px;
+    padding: 0.7rem 1rem;
+    font-size: 0.86rem;
+    font-weight: 800;
+}
+
+html.dark header nav,
+html.dark footer,
+html.dark .dashboard-card,
+html.dark .glass-panel,
+html.dark .stat-card,
+html.dark .inner-panel {
+    border-color: rgb(39, 39, 42) !important;
+    background: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+    box-shadow: none !important;
+}
+
+html.dark header nav > div:nth-child(1) + div,
+html.dark header nav .lg\:flex,
+html.dark #mobileMenu {
+    border-color: rgb(39, 39, 42) !important;
+    background: rgb(0, 0, 0) !important;
+}
+
+html.dark .text-slate-950,
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-slate-700,
+html.dark .card-title,
+html.dark .section-heading h2 {
+    color: rgb(255, 255, 255) !important;
+}
+
+html.dark .text-slate-600,
+html.dark .text-slate-500,
+html.dark .text-zinc-400,
+html.dark p,
+html.dark footer {
+    color: rgb(212, 212, 216) !important;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark strong,
+html.dark .font-bold,
+html.dark .font-extrabold {
+    color: rgb(255, 255, 255) !important;
+}
+
+html.dark a,
+html.dark button {
+    border-color: rgb(39, 39, 42) !important;
+}
+
+html.dark a:hover,
+html.dark button:hover {
+    border-color: rgba(59, 130, 246, 0.7) !important;
+    color: rgb(96, 165, 250) !important;
+}
+
+html.dark a.bg-white,
+html.dark button.bg-white,
+html.dark .bg-white,
+html.dark .bg-white\/90 {
+    background: rgb(0, 0, 0) !important;
+}
+
+html.dark .bg-slate-100,
+html.dark .hover\:bg-slate-100:hover,
+html.dark .dark\:hover\:bg-zinc-900:hover,
+html.dark .dark\:hover\:bg-zinc-800:hover {
+    background: rgb(9, 9, 11) !important;
+}
+
+html.dark .bg-slate-950 {
+    background: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+html.dark .label,
+html.dark .section-heading span {
+    color: rgb(96, 165, 250) !important;
+}
+
+html.dark .bg-blue-600 {
+    background: rgb(37, 99, 235) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+html.dark .skill-badge,
+html.dark .mini-badge {
+    border-color: rgb(39, 39, 42) !important;
+    background: rgb(9, 9, 11) !important;
+    color: rgb(212, 212, 216) !important;
+}
+
+@media (max-width: 640px) {
+    .section-shell {
+        padding-block: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-heading h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-heading h2 {
+        font-size: 1.9rem;
+    }
+}

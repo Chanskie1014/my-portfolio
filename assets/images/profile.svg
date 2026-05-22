@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Profile portrait placeholder</title>
+  <desc id="desc">Minimal professional profile illustration.</desc>
+  <rect width="640" height="640" rx="80" fill="#e2e8f0"/>
+  <rect x="40" y="40" width="560" height="560" rx="58" fill="#f8fafc"/>
+  <circle cx="320" cy="238" r="112" fill="#1e293b"/>
+  <path d="M148 568c22-118 104-184 172-184s150 66 172 184H148Z" fill="#2563eb"/>
+  <path d="M228 568c17-74 57-116 92-116s75 42 92 116H228Z" fill="#0f172a" opacity=".16"/>
+  <circle cx="282" cy="235" r="10" fill="#f8fafc"/>
+  <circle cx="358" cy="235" r="10" fill="#f8fafc"/>
+  <path d="M286 294c23 18 45 18 68 0" fill="none" stroke="#f8fafc" stroke-width="14" stroke-linecap="round"/>
+</svg>
