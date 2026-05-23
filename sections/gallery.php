@@ -111,7 +111,7 @@ if (count($personalPhotos) === 0) {
 
         <div class="mt-6">
             <?php if (count($minorCertificates) > 0) : ?>
-                <?php portfolioGalleryCarousel('Minor Certificates', $minorCertificates, 'contain'); ?>
+                <?php portfolioGalleryCarousel('Event Certificates', $minorCertificates, 'contain'); ?>
             <?php else : ?>
                 <div class="mt-4 rounded-lg border border-dashed border-slate-300 p-5 text-sm text-slate-500 dark:border-zinc-800 dark:text-zinc-400">
                     Add certificate images inside <strong class="font-bold text-slate-700 dark:text-zinc-200">assets/images/minor-certificates</strong> and they will appear here automatically.
