@@ -4,7 +4,7 @@ $projects = [
         'title' => 'AquaTrack',
         'image' => 'assets/images/project-aquatrack.jpg',
         'description' => 'A clean monitoring dashboard for tracking water quality readings, alerts, and historical trends.',
-        'stack' => ['PHP', 'MySQL', 'JavaScript', 'Tailwind'],
+        'stack' => ['PHP', 'Python', 'MySQL', 'JavaScript', 'Tailwind'],
     ],
     [
         'title' => 'Developer Portfolio',

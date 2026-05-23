@@ -1,7 +1,7 @@
 <?php
 $skills = [
     'Frontend' => ['HTML', 'CSS', 'Tailwind CSS', 'JavaScript'],
-    'Backend' => ['PHP', 'MySQL'],
+    'Backend' => ['PHP', 'Python', 'MySQL'],
     'Tools & Frameworks' => ['Git', 'GitHub', 'Firebase', 'VS Code', 'Figma'],
 ];
 ?>
