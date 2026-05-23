@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuButton = document.getElementById('mobileMenuButton');
     const mobileMenu = document.getElementById('mobileMenu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
+    const certificateModal = document.getElementById('certificateModal');
+    const certificateImage = document.getElementById('certificateModalImage');
+    const certificateTitle = document.getElementById('certificateModalTitle');
+    const certificateIssuer = document.getElementById('certificateModalIssuer');
+    const certificateTriggers = document.querySelectorAll('[data-certificate-trigger]');
+    const certificateCloseButtons = document.querySelectorAll('[data-certificate-close]');
+    let activeCertificateTrigger = null;
 
     function setTheme(theme) {
         const isDark = theme === 'dark';
@@ -31,6 +38,76 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+
+    function openCertificateModal(trigger) {
+        if (!certificateModal || !certificateImage || !certificateTitle || !certificateIssuer) {
+            return;
+        }
+
+        activeCertificateTrigger = trigger;
+        const title = trigger.dataset.certificateTitle || 'Certificate';
+        const issuer = trigger.dataset.certificateIssuer || '';
+        const image = trigger.dataset.certificateImage || '';
+
+        certificateTitle.textContent = title;
+        certificateIssuer.textContent = issuer;
+        certificateImage.src = image;
+        certificateImage.alt = title + ' certificate';
+        certificateModal.classList.remove('hidden');
+        certificateModal.classList.add('flex');
+        certificateModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('overflow-hidden');
+
+        const closeButton = certificateModal.querySelector('[data-certificate-close]');
+        if (closeButton) {
+            closeButton.focus();
+        }
+    }
+
+    function closeCertificateModal() {
+        if (!certificateModal || certificateModal.classList.contains('hidden')) {
+            return;
+        }
+
+        certificateModal.classList.add('hidden');
+        certificateModal.classList.remove('flex');
+        certificateModal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('overflow-hidden');
+
+        if (certificateImage) {
+            certificateImage.removeAttribute('src');
+            certificateImage.alt = '';
+        }
+
+        if (activeCertificateTrigger) {
+            activeCertificateTrigger.focus();
+            activeCertificateTrigger = null;
+        }
+    }
+
+    certificateTriggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+            openCertificateModal(trigger);
+        });
+    });
+
+    certificateCloseButtons.forEach(function (button) {
+        button.addEventListener('click', closeCertificateModal);
+    });
+
+    if (certificateModal) {
+        certificateModal.addEventListener('click', function (event) {
+            if (event.target === certificateModal) {
+                closeCertificateModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            closeCertificateModal();
+        }
+    });
 
     if (window.AOS) {
         AOS.init({
