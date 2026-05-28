@@ -58,6 +58,7 @@ $facebook = 'https://facebook.com/christian.gamao.2024';
             <?php include __DIR__ . '/sections/experience.php'; ?>
         </div>
         <?php include __DIR__ . '/sections/techstack.php'; ?>
+        <?php include __DIR__ . '/sections/services.php'; ?>
         <?php include __DIR__ . '/sections/projects.php'; ?>
         <?php include __DIR__ . '/sections/certifications.php'; ?>
         <?php include __DIR__ . '/sections/gallery.php'; ?>

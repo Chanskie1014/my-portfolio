@@ -24,7 +24,7 @@ $projects = [
         <div class="mt-5 grid gap-5 md:grid-cols-2">
             <?php foreach ($projects as $index => $project) : ?>
                 <article class="inner-panel group overflow-hidden" data-aos="fade-up" data-aos-delay="<?php echo $index * 80; ?>">
-                    <img src="<?php echo htmlspecialchars($project['image']); ?>" alt="<?php echo htmlspecialchars($project['title']); ?> preview" class="h-56 w-full border-b border-slate-200 object-cover transition duration-500 group-hover:scale-[1.02] dark:border-zinc-800">
+                    <img src="<?php echo htmlspecialchars($project['image']); ?>" alt="<?php echo htmlspecialchars($project['title']); ?> preview" class="h-44 w-full border-b border-slate-200 object-cover transition duration-500 group-hover:scale-[1.02] dark:border-zinc-800 sm:h-56">
                     <div class="p-5">
                         <h3 class="text-xl font-extrabold text-slate-950 dark:text-white"><?php echo htmlspecialchars($project['title']); ?></h3>
                         <p class="mt-3 min-h-16 text-sm leading-6 text-slate-500 dark:text-zinc-400"><?php echo htmlspecialchars($project['description']); ?></p>

@@ -3,27 +3,28 @@ $navItems = [
     ['label' => 'About', 'href' => '#about'],
     ['label' => 'Stack', 'href' => '#tech-stack'],
     ['label' => 'Experience', 'href' => '#experience'],
+    ['label' => 'Services', 'href' => '#services'],
     ['label' => 'Projects', 'href' => '#projects'],
     ['label' => 'Contact', 'href' => '#contact'],
 ];
 ?>
 <!-- Navbar -->
 <header class="fixed inset-x-0 top-0 z-50 px-4 pt-4">
-    <nav class="mx-auto max-w-6xl rounded-xl border border-slate-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur-xl transition-colors duration-300 dark:border-zinc-800 dark:bg-black/85">
+    <nav class="mx-auto max-w-6xl rounded-xl border border-slate-200 bg-white/90 px-3 py-3 shadow-sm backdrop-blur-xl transition-colors duration-300 dark:border-zinc-800 dark:bg-black/85 sm:px-4">
         <div class="flex items-center justify-between gap-4">
-            <a href="#home" class="group flex items-center gap-3" aria-label="Go to home section">
-                <span class="grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-black shadow-glow transition-transform duration-300 group-hover:-translate-y-0.5">
+            <a href="#home" class="group flex min-w-0 items-center gap-3" aria-label="Go to home section">
+                <span class="grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-black shadow-glow transition-transform duration-300 group-hover:-translate-y-0.5">
                     <img src="assets/images/cg_logo.png" alt="CG logo" class="h-full w-full object-cover">
                 </span>
-                <span>
-                    <span class="block text-sm font-bold leading-tight text-slate-950 dark:text-white"><?php echo htmlspecialchars($fullName); ?></span>
-                    <span class="block text-xs font-medium text-slate-500 dark:text-zinc-400">Portfolio Dashboard</span>
+                <span class="min-w-0">
+                    <span class="block truncate text-sm font-bold leading-tight text-slate-950 dark:text-white"><?php echo htmlspecialchars($fullName); ?></span>
+                    <span class="block truncate text-xs font-medium text-slate-500 dark:text-zinc-400">Portfolio Dashboard</span>
                 </span>
             </a>
 
-            <div class="hidden items-center gap-1 rounded-xl border border-slate-200 bg-white p-1 dark:border-zinc-800 dark:bg-black lg:flex">
+            <div class="hidden min-w-0 items-center gap-1 rounded-xl border border-slate-200 bg-white p-1 dark:border-zinc-800 dark:bg-black lg:flex">
                 <?php foreach ($navItems as $item) : ?>
-                    <a class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-blue-600 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:text-blue-400" href="<?php echo htmlspecialchars($item['href']); ?>">
+                    <a class="rounded-lg px-2.5 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-blue-600 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:text-blue-400 xl:px-3" href="<?php echo htmlspecialchars($item['href']); ?>">
                         <?php echo htmlspecialchars($item['label']); ?>
                     </a>
                 <?php endforeach; ?>

@@ -6,11 +6,11 @@
             <svg class="hidden h-5 w-5 dark:block" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.25 14.15A7.5 7.5 0 0 1 9.85 3.75 8.5 8.5 0 1 0 20.25 14.15Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
 
-        <div class="flex flex-col items-start gap-5 pr-14 sm:flex-row sm:items-center">
-            <img src="assets/images/CG%20PROFILE.png" alt="Christian Gamao profile photo" class="h-32 w-32 rounded-lg border border-slate-200 object-cover shadow-sm dark:border-zinc-800 sm:h-36 sm:w-36">
+        <div class="flex flex-col items-center gap-5 pr-0 pt-10 text-center sm:flex-row sm:items-center sm:pt-0 sm:text-left">
+            <img src="assets/images/CG%20PROFILE.png" alt="Christian Gamao profile photo" class="h-28 w-28 rounded-lg border border-slate-200 object-cover shadow-sm dark:border-zinc-800 sm:h-36 sm:w-36">
 
             <div class="min-w-0">
-                <div class="flex flex-wrap items-center gap-2">
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
                     <h1 class="text-xl font-extrabold text-slate-950 dark:text-white sm:text-2xl">
                         <?php echo htmlspecialchars($fullName); ?>
                     </h1>
@@ -20,7 +20,7 @@
                 </div>
                 <p class="mt-1 text-sm font-medium text-slate-500 dark:text-zinc-400">Davao, Philippines</p>
                 <p class="mt-3 text-sm font-bold text-slate-900 dark:text-zinc-100"><?php echo htmlspecialchars($role); ?></p>
-                <div class="mt-4 flex flex-wrap gap-3">
+                <div class="mt-4 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
                     <a href="https://docs.google.com/document/d/1IezrTbw_YZh3C41YZYxXO3ZJAu8zrgtogVrJu6S7Xb0/edit?usp=sharing" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-950 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-600 dark:bg-white dark:text-black dark:hover:bg-blue-500 dark:hover:text-white">
                         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 3h7l3 3v15H7V3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v4h4M9.5 12h5M9.5 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
                         View CV

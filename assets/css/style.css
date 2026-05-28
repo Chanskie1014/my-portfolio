@@ -2,8 +2,21 @@ html {
     scroll-padding-top: 112px;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
 }
 
 html.dark,
@@ -69,12 +82,14 @@ html.dark .portfolio-grid {
     background: rgb(255, 255, 255);
     box-shadow: 0 14px 36px rgba(15, 23, 42, 0.06);
     border-radius: 0.5rem;
+    overflow-wrap: anywhere;
 }
 
 .inner-panel {
     border: 1px solid rgb(226, 232, 240);
     background: rgb(255, 255, 255);
     border-radius: 0.5rem;
+    min-width: 0;
 }
 
 .dark .inner-panel {
@@ -452,8 +467,52 @@ html.dark .mini-badge {
 }
 
 @media (max-width: 640px) {
+    html {
+        scroll-padding-top: 96px;
+    }
+
     .section-shell {
-        padding-block: 3rem;
+        padding-block: 2rem;
+        padding-inline: 0.75rem;
+    }
+
+    .dashboard-card.p-6 {
+        padding: 1rem;
+    }
+
+    .inner-panel.p-5,
+    .certification-card .p-5 {
+        padding: 1rem;
+    }
+
+    .skill-badge {
+        padding: 0.58rem 0.78rem;
+        font-size: 0.76rem;
+    }
+
+    .mini-badge {
+        padding: 0.38rem 0.58rem;
+        font-size: 0.68rem;
+    }
+
+    .project-button {
+        width: 100%;
+    }
+
+    .gallery-item {
+        flex-basis: min(82vw, 18rem);
+    }
+
+    .gallery-item__image {
+        height: 12.5rem;
+    }
+
+    .gallery-carousel__topline {
+        align-items: flex-start;
+    }
+
+    .certificate-modal {
+        padding: 0.75rem;
     }
 }
 
