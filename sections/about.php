@@ -13,12 +13,12 @@
             <div>
                 <p class="label">Education</p>
                 <h3 class="mt-1 text-sm font-bold text-slate-950 dark:text-white">Bachelor of Science in Information Technology</h3>
-                <p class="mt-1 text-sm leading-6 text-slate-500 dark:text-zinc-400">Web development, databases, systems analysis, and software engineering.</p>
+                <p class="mt-1 text-sm leading-6 text-slate-500 dark:text-zinc-400">Web development, databases, systems analysis, and UI/UX design.</p>
             </div>
             <div>
-                <p class="label">Passion</p>
-                <h3 class="mt-1 text-sm font-bold text-slate-950 dark:text-white">Human-centered development</h3>
-                <p class="mt-1 text-sm leading-6 text-slate-500 dark:text-zinc-400">Dashboards, monitoring tools, mapping systems, and marketplace features.</p>
+                <p class="label">Specialization</p>
+                <h3 class="mt-1 text-sm font-bold text-slate-950 dark:text-white">Web and System Development</h3>
+                <p class="mt-1 text-sm leading-6 text-slate-500 dark:text-zinc-400">Building responsive dashboards, management systems, and modern web applications.</p>
             </div>
         </div>
     </article>
