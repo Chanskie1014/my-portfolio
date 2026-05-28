@@ -13,6 +13,8 @@ $facebook = 'https://facebook.com/christian.gamao.2024';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Modern internship portfolio for <?php echo htmlspecialchars($fullName); ?>, an aspiring web developer.">
     <title><?php echo htmlspecialchars($fullName); ?> | Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/cg_logo.png">
+    <link rel="apple-touch-icon" href="assets/images/cg_logo.png">
 
     <script>
         (function () {

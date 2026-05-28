@@ -12,7 +12,9 @@ $navItems = [
     <nav class="mx-auto max-w-6xl rounded-xl border border-slate-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur-xl transition-colors duration-300 dark:border-zinc-800 dark:bg-black/85">
         <div class="flex items-center justify-between gap-4">
             <a href="#home" class="group flex items-center gap-3" aria-label="Go to home section">
-                <span class="grid h-10 w-10 place-items-center rounded-xl bg-blue-600 text-sm font-bold text-white shadow-glow transition-transform duration-300 group-hover:-translate-y-0.5">KA</span>
+                <span class="grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-black shadow-glow transition-transform duration-300 group-hover:-translate-y-0.5">
+                    <img src="assets/images/cg_logo.png" alt="CG logo" class="h-full w-full object-cover">
+                </span>
                 <span>
                     <span class="block text-sm font-bold leading-tight text-slate-950 dark:text-white"><?php echo htmlspecialchars($fullName); ?></span>
                     <span class="block text-xs font-medium text-slate-500 dark:text-zinc-400">Portfolio Dashboard</span>
