@@ -2,8 +2,8 @@
 $contacts = [
     ['label' => 'Email', 'value' => $email, 'href' => 'mailto:' . $email],
     ['label' => 'GitHub', 'value' => 'github.com/Chanskie1014', 'href' => $github],
-    ['label' => 'LinkedIn', 'value' => 'linkedin.com/in/yourusername', 'href' => $linkedin],
-    ['label' => 'Facebook', 'value' => 'facebook.com/yourusername', 'href' => $facebook],
+    ['label' => 'LinkedIn', 'value' => 'linkedin.com/in/chris-tian-722b24313', 'href' => $linkedin],
+    ['label' => 'Facebook', 'value' => 'facebook.com/christian.gamao.2024', 'href' => $facebook],
 ];
 ?>
 <!-- Contact Section -->

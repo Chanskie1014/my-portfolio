@@ -2,9 +2,9 @@
 $fullName = 'Christian Gamao';
 $role = 'BSIT Student / Aspiring Web Developer';
 $email = 'tianchris019@gmail.com';
-$github = 'https://github.com/yourusername';
-$linkedin = 'https://linkedin.com/in/yourusername';
-$facebook = 'https://facebook.com/yourusername';
+$github = 'https://github.com/Chanskie1014';
+$linkedin = 'https://www.linkedin.com/in/chris-tian-722b24313/';
+$facebook = 'https://facebook.com/christian.gamao.2024';
 ?>
 <!doctype html>
 <html lang="en" class="scroll-smooth">

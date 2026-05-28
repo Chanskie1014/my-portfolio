@@ -5,12 +5,14 @@ $projects = [
         'image' => 'assets/images/project-aquatrack.jpg',
         'description' => 'A clean monitoring dashboard for tracking water quality readings, alerts, and historical trends.',
         'stack' => ['PHP', 'Python', 'MySQL', 'JavaScript', 'Tailwind'],
+        'github' => 'https://github.com/Chanskie1014/aquatrack-system.git',
     ],
     [
         'title' => 'Developer Portfolio',
         'image' => 'assets/images/project-developerportfolio.jpg',
         'description' => 'A responsive internship portfolio built with pure PHP, Tailwind CDN, JavaScript, reusable includes, and dark mode support.',
         'stack' => ['PHP', 'Tailwind CSS', 'JavaScript', 'AOS'],
+        'github' => 'https://github.com/Chanskie1014/my-portfolio.git',
     ],
 ];
 ?>
@@ -32,7 +34,7 @@ $projects = [
                             <?php endforeach; ?>
                         </div>
                         <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-                            <a href="#" class="project-button border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:text-blue-600 dark:border-zinc-800 dark:bg-black dark:text-zinc-200 dark:hover:border-blue-500/40 dark:hover:text-blue-400">GitHub</a>
+                            <a href="<?php echo htmlspecialchars($project['github']); ?>" class="project-button border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:text-blue-600 dark:border-zinc-800 dark:bg-black dark:text-zinc-200 dark:hover:border-blue-500/40 dark:hover:text-blue-400" target="_blank" rel="noopener">GitHub</a>
                             <a href="#" class="project-button border-blue-600 bg-blue-600 text-white hover:bg-blue-700">Live Demo</a>
                         </div>
                     </div>
