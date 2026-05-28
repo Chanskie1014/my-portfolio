@@ -1,10 +1,12 @@
 <?php
 $timeline = [
-    ['year' => '2026', 'title' => 'BS Information Technology - 4th Year', 'type' => 'Education', 'detail' => 'Completed advanced subjects in web systems, database design, and capstone development.'],
+    ['year' => '2026', 'title' => 'BS Information Technology - 4th Year', 'type' => 'Education', 'detail' => 'Specializing in web systems, responsive interfaces, and real-world application development.'],
     ['year' => '2026', 'title' => 'Internship - Actively Seeking', 'type' => 'Internship', 'detail' => 'Preparing for hands-on training in web development, QA, and IT support environments.'],
     ['year' => '2025', 'title' => 'Capstone Project Developer', 'type' => 'Projects', 'detail' => 'Built responsive modules for mapping, monitoring, and marketplace-style applications.'],
-    ['year' => '2025', 'title' => 'IT Specialist Certification', 'type' => 'Certification', 'detail' => 'Strengthened fundamentals in databases, networking, web development, and productivity tools.'],
-    ['year' => '2024', 'title' => 'Tech Community Participation', 'type' => 'Organization', 'detail' => 'Joined school-based tech events, peer collaboration, and project demonstrations.'],
+    ['year' => '2021', 'title' => '
+NC II – Computer Systems Servicing', 'type' => 'Certification', 'detail' => 'Certified in computer hardware servicing, basic networking, troubleshooting, and technical support.'],
+    ['year' => '2022', 'title' => 'Pump Boy – Green Gold Gasoline Station', 'type' => 'Organization', 'detail' => 'Handled daily customer service and assisted in station operations while maintaining efficiency and teamwork.
+'],
 ];
 ?>
 <!-- Experience Timeline Section -->
